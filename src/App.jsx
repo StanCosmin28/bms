@@ -1,4 +1,5 @@
 import "./App.css";
+import HeaderCarousel from "./Components/HeaderCarousel";
 import Navbar from "./Components/Navbar";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <h1 className="text-center">BMS ROMANIA </h1>
       </header>
       <Navbar />
+      <HeaderCarousel />
     </>
   );
 }

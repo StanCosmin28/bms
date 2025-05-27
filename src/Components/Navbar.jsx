@@ -14,10 +14,10 @@ export default function Navbar() {
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
-            alt="Flowbite Logo"
+            alt="BMS Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap">
-            Flowbite
+            BMS
           </span>
         </a>
         <div className="flex md:order-2 space-x-2">
