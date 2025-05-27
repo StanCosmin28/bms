@@ -1,6 +1,8 @@
 import "./App.css";
 import HeaderCarousel from "./Components/HeaderCarousel";
 import Navbar from "./Components/Navbar";
+import TechSection from "./Components/TechSection";
+import CustomTechGrid from "./Components/CustomTechGrid";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       </header>
       <Navbar />
       <HeaderCarousel />
+      <TechSection />
+      <CustomTechGrid />
     </>
   );
 }
