@@ -3,6 +3,8 @@ import HeaderCarousel from "./Components/HeaderCarousel";
 import Navbar from "./Components/Navbar";
 import TechSection from "./Components/TechSection";
 import CustomTechGrid from "./Components/CustomTechGrid";
+import PromotionalSection from "./Components/PromotionalSection";
+import PostsSection from "./Components/PostsSection";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <HeaderCarousel />
       <TechSection />
       <CustomTechGrid />
+      <PostsSection />
+      {/* <PromotionalSection /> */}
     </>
   );
 }
