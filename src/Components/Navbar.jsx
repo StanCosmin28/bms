@@ -11,16 +11,16 @@ export default function Navbar() {
           href="https://flowbite.com/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
+          {/* <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
             alt="BMS Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap">
+          /> */}
+          <span className="self-center text-2xl font-black whitespace-nowrap text-black ">
             BMS
           </span>
         </a>
-        <div className="flex md:order-2 space-x-2">
+        <div className="flex md:order-2 space-x-2 justify-center items-center">
           <button
             type="button"
             onClick={toggleMenu}
@@ -95,6 +95,9 @@ export default function Navbar() {
               />
             </svg>
           </button>
+          <button className="font-bold bg-blue-600 p-[7px] px-4 rounded-lg">
+            Abonează-te
+          </button>
         </div>
         <div
           className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
@@ -127,7 +130,7 @@ export default function Navbar() {
               placeholder="Search..."
             />
           </div>
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
             <li>
               <a
                 href="#"

@@ -48,6 +48,7 @@ export default function HeaderCarousel() {
             alt={slide.title}
             className="w-full h-full object-cover"
           />
+
           <div className="absolute inset-0 bg-black/30 bg-opacity-40 flex flex-col justify-center items-end text-center text-white px-4">
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
               {slide.title}
@@ -57,7 +58,7 @@ export default function HeaderCarousel() {
             </p>
             <a
               href="#"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
             >
               Citește tot articolul
             </a>
