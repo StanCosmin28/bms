@@ -10,7 +10,7 @@ export default function HighlightedBlogPost({
   author = "Bransha",
 }) {
   return (
-    <section className="bg-white text-gray-900 py-12 px-4">
+    <section className="bg-gray-100 text-gray-900 py-12 px-4">
       <div className="max-w-[1350px] mx-auto flex flex-col lg:flex-row items-center gap-8">
         {/* Imaginea - Stânga */}
         <div className="w-full lg:w-1/2">
@@ -35,7 +35,7 @@ export default function HighlightedBlogPost({
             {title}
           </h1>
           <p className="text-gray-600 text-lg mb-4">{description}</p>
-          <hr class="border-gray-400 w-full mb-6 md:mb-4 mx-auto md:mx-0"></hr>
+          <hr className="border-gray-400 w-full mb-6 md:mb-4 mx-auto md:mx-0"></hr>
           <div className="w-full h-5 flex justify-between items-center flex-row mb-6 md:mb-4">
             <p className="font-normal text-gray-400">{date}</p>
             <a className="text-blue-500" href="#">

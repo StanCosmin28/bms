@@ -47,7 +47,7 @@ export default function PromotionalSection() {
   };
 
   return (
-    <section className="bg-white text-gray-900 py-8 px-4">
+    <section className="bg-gray-100 text-gray-900 py-8 px-4">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
         {/* Left Section: Headline and Info Cards */}
         <div className="flex-1">
@@ -138,7 +138,7 @@ export default function PromotionalSection() {
                   alt={slide.title}
                   className="w-full h-auto max-h-52 sm:max-h-64 md:max-h-80 object-cover rounded-lg"
                 />
-                <div className="p-4 bg-white">
+                <div className="p-4">
                   <span className="inline-flex items-center text-sm text-blue-600 bg-blue-100 rounded-full px-3 py-1 mb-2">
                     <svg
                       className="w-4 h-4 mr-1"

@@ -31,7 +31,7 @@ export default function CustomTechGrid() {
   ];
 
   return (
-    <div className="p-4">
+    <div className="p-4 bg-gray-100">
       {/* Layout pentru mobile (sm și mai jos) */}
       <div className="block md:hidden">
         <div className="space-y-4">
@@ -85,7 +85,7 @@ export default function CustomTechGrid() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-4 h-auto lg:h-screen">
           {/* Elementul mare din stânga */}
           <div
-            className={`row-span-2 col-span-1 transition-all ${
+            className={`row-span-2 col-span-1 transition-all cursor-pointer ${
               hoveredIndex !== null && hoveredIndex !== 0 ? "blur-xs" : ""
             }`}
             onMouseEnter={() => setHoveredIndex(0)}

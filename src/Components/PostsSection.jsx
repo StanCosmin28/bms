@@ -83,10 +83,10 @@ export default function PostsSection() {
   ];
 
   return (
-    <section className="bg-white text-gray-900 py-12 px-4">
+    <section className="bg-gray-100 text-gray-900 py-12 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          Smart Home Posts
+          Articole Recomandate
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
