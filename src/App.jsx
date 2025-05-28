@@ -1,10 +1,11 @@
 import "./App.css";
 import HeaderCarousel from "./Components/HeaderCarousel";
 import Navbar from "./Components/Navbar";
-import TechSection from "./Components/TechSection";
+// import TechSection from "./Components/TechSection";
 import CustomTechGrid from "./Components/CustomTechGrid";
-import PromotionalSection from "./Components/PromotionalSection";
-import PostsSection from "./Components/PostsSection";
+// import PromotionalSection from "./Components/PromotionalSection";
+// import PostsSection from "./Components/PostsSection";
+import HighlightedBlogPost from "./Components/HighlightedBlogPost";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
       </header>
       <Navbar />
       <HeaderCarousel />
-      <TechSection />
+      {/* <TechSection /> */}
       <CustomTechGrid />
-      <PostsSection />
+      <HighlightedBlogPost />
+      {/* <PostsSection /> */}
       {/* <PromotionalSection /> */}
     </>
   );
