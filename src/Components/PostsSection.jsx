@@ -120,6 +120,11 @@ export default function PostsSection() {
           ))}
         </div>
       </div>
+      <div className="flex w-full justify-center items-center p-5">
+        <a className="text-gray-600 font-normal underline opacity-30" href="#">
+          Mai multe articole
+        </a>
+      </div>
     </section>
   );
 }

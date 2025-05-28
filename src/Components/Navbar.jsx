@@ -95,7 +95,7 @@ export default function Navbar() {
               />
             </svg>
           </button>
-          <button className="font-bold bg-blue-600 p-[7px] px-4 rounded-lg">
+          <button className="font-bold bg-blue-600 p-[7px] px-4 rounded-lg cursor-pointer">
             Abonează-te
           </button>
         </div>

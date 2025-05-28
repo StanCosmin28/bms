@@ -68,7 +68,7 @@ export default function HeaderCarousel() {
       <div className="absolute bottom-4 right-4 flex space-x-2">
         <button
           onClick={prevSlide}
-          className="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors"
+          className="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors cursor-pointer"
           aria-label="Previous slide"
         >
           <svg
@@ -88,7 +88,7 @@ export default function HeaderCarousel() {
         </button>
         <button
           onClick={nextSlide}
-          className="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors"
+          className="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors cursor-pointer"
           aria-label="Next slide"
         >
           <svg
