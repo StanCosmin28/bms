@@ -12,7 +12,9 @@ export default function HeaderCarousel() {
   };
 
   return (
-    <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[100vh] overflow-hidden">
+      {" "}
+      {/* md:h-[90vh] lg:h-[100vh] */}
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -26,19 +28,21 @@ export default function HeaderCarousel() {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute inset-0 bg-black/30 bg-opacity-40 flex flex-col justify-center items-end text-center text-white px-4">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
-              {slide.title}
-            </h1>
-            <p className="text-sm md:text-lg lg:text-xl mb-6 max-w-2xl">
-              {slide.description}
-            </p>
-            <a
-              href="#"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
-            >
-              Citește tot articolul
-            </a>
+          <div className="absolute inset-0 bg-black/30 bg-opacity-40 flex flex-col justify-center items-end text-center text-white px-4 lg:pr-30">
+            <div className="lg:max-w-2xl md:max-w-xl ms:max-w-lg max-w-md text-left gap-4 flex flex-col">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
+                {slide.title}
+              </h1>
+              <p className="text-sm md:text-lg lg:text-xl mb-6 max-w-xl">
+                {slide.description}
+              </p>
+              <a
+                href="#"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors max-w-[180px]"
+              >
+                Citește tot articolul
+              </a>
+            </div>
           </div>
         </div>
       ))}

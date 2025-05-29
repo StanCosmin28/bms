@@ -92,42 +92,71 @@ export default function Banner() {
         <div
           className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://plus.unsplash.com/premium_photo-1729436833449-225649403fc0?q=80&w=3667&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundImage: `url('https://plus.unsplash.com/premium_photo-1716603741751-c558f6e805f0?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
           }}
         >
           {/* Overlay semi-transparent cu gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 to-blue-800/50"></div>
+          <div className="absolute opacity-95">
+            <svg
+              width="1440"
+              height="779"
+              viewBox="0 0 1440 779"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="-1.5"
+                width="1443"
+                height="779"
+                fill="url(#paint0_linear_679_791)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_679_791"
+                  x1="-1.5"
+                  y1="389.5"
+                  x2="1441.5"
+                  y2="389.5"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop />
+                  <stop offset="0.254095" stop-color="#000147" />
+                  <stop offset="1" stop-color="#000147" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
 
           {/* Elemente decorative */}
-          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-300/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div>
+          {/* <div className="absolute top-10 left-10 w-32 h-32 bg-blue-300/10 rounded-full blur-3xl"></div> */}
+          {/* <div className="absolute bottom-10 right-10 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div> */}
 
           {/* Conținut suprapus */}
           <div className="relative z-10 flex flex-col items-start justify-center h-full text-left px-6 sm:px-8 lg:px-12  max-w-[600px]">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight bg-blue-500/80 p-4 rounded-xl shadow-lg">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight bg-[#5154FF] p-4 rounded-xl shadow-lg">
               Descoperă Tehnologia{" "}
               <span className="text-cyan-200">BMS cu BMS România</span>
             </h1>
 
             {/* Linii animate */}
-            <div className="w-full max-w-[600px] mt-2 mb-8">
+            <div className="w-full max-w-[590px] mt-[6px] mb-8">
               <div
-                className={`bg-blue-500 h-4 mb-1 rounded-sm w-0 ${
+                className={`bg-[#5154FF] h-5 mb-[6px] rounded-sm w-0 ${
                   isVisible ? "animate-grow-width-1" : ""
                 }`}
               ></div>
               <div
-                className={`bg-blue-500 h-4 mb-1 rounded-sm w-0 ${
+                className={`bg-[#5154FF] h-5 mb-[6px] rounded-sm w-0 ${
                   isVisible ? "animate-grow-width-2" : ""
                 }`}
               ></div>
               <div
-                className={`bg-blue-500 h-4 mb-1 rounded-sm w-0 ${
+                className={`bg-[#5154FF] h-5 mb-[6px] rounded-sm w-0 ${
                   isVisible ? "animate-grow-width-3" : ""
                 }`}
               ></div>
               <div
-                className={`bg-blue-500 h-4 mb-4 rounded-sm w-0 ${
+                className={`bg-[#5154FF] h-5 mb-[6px] rounded-sm w-0 ${
                   isVisible ? "animate-grow-width-4" : ""
                 }`}
               ></div>
@@ -140,7 +169,7 @@ export default function Banner() {
 
             <a
               href="#"
-              className="bg-blue-500 text-white px-6 py-3 rounded-xl hover:bg-blue-600 transition-all duration-300 text-base sm:text-lg font-semibold shadow-xl transform hover:scale-[1.02] active:scale-[0.98]"
+              className="bg-[#5154FF] text-white px-6 py-3 rounded-xl hover:bg-[#5154FF] transition-all duration-300 text-base sm:text-lg font-semibold shadow-xl transform hover:scale-105 active:scale-[0.98]"
             >
               Află Mai Mult
             </a>

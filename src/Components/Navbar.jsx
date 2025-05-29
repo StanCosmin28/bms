@@ -202,7 +202,7 @@ export default function Navbar() {
                 className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
               >
-                Home
+                🔥 HOT FEED
               </a>
             </li>
             <li>
@@ -210,7 +210,7 @@ export default function Navbar() {
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >
-                About
+                PARTENERI
               </a>
             </li>
             <li>
@@ -218,7 +218,7 @@ export default function Navbar() {
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >
-                Services
+                DOMENII
               </a>
             </li>
           </ul>

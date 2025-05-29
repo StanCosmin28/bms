@@ -2,9 +2,10 @@ const slides = [
   {
     image:
       "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=3530&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Descoperă Locuința Inteligentă",
+    title:
+      "7 produse care fac casele inteligente mai atractive pentru cumparatori",
     description:
-      "Află cum tehnologia modernă transformă casele obișnuite în spații inteligente și eficiente.",
+      "In acest articol vom descrie 7 produse care va fac locuinta inteligenta: Yalele Inteligente | Zilele de sunat la sonerie sau de utilizare...",
   },
   {
     image:
