@@ -72,10 +72,10 @@ export default function NewsletterSection() {
         <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-40 h-40 bg-orange-200/20 rounded-full blur-3xl"></div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Content */}
-            <div className="bg-gradient-to-br from-blue-700 to-blue-900 p-8 lg:p-10 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div className="bg-gradient-to-br border-1 from-blue-700 to-blue-900 p-8 lg:p-10 rounded-3xl shadow-2xl relative overflow-hidden">
               {/* Background pattern */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-transparent"></div>
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-16 translate-x-16"></div>
@@ -119,7 +119,7 @@ export default function NewsletterSection() {
             </div>
 
             {/* Right Side - Form */}
-            <div className="bg-gradient-to-br from-orange-400 to-orange-600 p-8 lg:p-10 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div className="bg-gradient-to-br border-1 from-orange-400 to-orange-600 p-8 lg:p-10 rounded-3xl shadow-2xl relative overflow-hidden">
               {/* Background decoration */}
               <div className="absolute inset-0 bg-gradient-to-br from-orange-300/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-white/5 rounded-full -translate-y-20 -translate-x-20"></div>

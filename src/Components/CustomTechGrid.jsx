@@ -43,7 +43,7 @@ export default function CustomTechGrid() {
                   className="w-full h-full object-cover rounded-lg"
                 />
                 {img.title && img.description && (
-                  <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-2 rounded-b-lg">
                     <h3 className="text-sm font-semibold">{img.title}</h3>
                     <p className="text-xs">{img.description}</p>
                   </div>
@@ -92,7 +92,7 @@ export default function CustomTechGrid() {
                 className="w-full h-full object-cover rounded-lg"
               />
               {img.title && img.description && (
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg">
+                <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 rounded-b-lg">
                   <h3 className="text-lg font-semibold">{img.title}</h3>
                   <p className="text-sm">{img.description}</p>
                 </div>
