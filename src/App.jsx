@@ -9,6 +9,7 @@ import HighlightedBlogPost from "./Components/HighlightedBlogPost";
 import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
 import NewsletterSection from "./Components/NewsLetterSection";
+// import BlogPost from "./Components/BlogPost";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <h1 className="text-center">BMS ROMANIA </h1>
       </header> */}
       <Navbar />
+      {/* <BlogPost /> */}
       <HeaderCarousel />
       <CustomTechGrid />
       <Banner />
