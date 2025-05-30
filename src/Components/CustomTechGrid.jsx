@@ -2,7 +2,7 @@ import { useState } from "react";
 import images from "../Model/techGridData";
 
 export default function CustomTechGrid() {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  // const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <div className="p-4 bg-gray-100">
@@ -11,11 +11,10 @@ export default function CustomTechGrid() {
         <div className="space-y-4">
           {/* Prima imagine mare pe mobile */}
           <div
-            className={`w-full h-64 transition-all ${
-              hoveredIndex !== null && hoveredIndex !== 0 ? "blur-xs" : ""
-            }`}
-            onMouseEnter={() => setHoveredIndex(0)}
-            onMouseLeave={() => setHoveredIndex(null)}
+            className={`w-full h-64 transition-all `}
+            // ${hoveredIndex !== null && hoveredIndex !== 0 ? "blur-xs" : ""}
+            // onMouseEnter={() => setHoveredIndex(0)}
+            // onMouseLeave={() => setHoveredIndex(null)}
           >
             <img
               src={images[0].src}
@@ -29,13 +28,10 @@ export default function CustomTechGrid() {
             {images.slice(1).map((img, index) => (
               <div
                 key={index}
-                className={`relative h-48 transition-all ${
-                  hoveredIndex !== null && hoveredIndex !== index + 1
-                    ? "blur-xs"
-                    : ""
-                }`}
-                onMouseEnter={() => setHoveredIndex(index + 1)}
-                onMouseLeave={() => setHoveredIndex(null)}
+                className={`relative h-48 transition-all`}
+                //  ${hoveredIndex !== null && hoveredIndex !== index + 1 ? "blur-xs" : ""}
+                // onMouseEnter={() => setHoveredIndex(index + 1)}
+                // onMouseLeave={() => setHoveredIndex(null)}
               >
                 <img
                   src={img.src}
@@ -59,11 +55,10 @@ export default function CustomTechGrid() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-4 h-auto lg:h-screen">
           {/* Elementul mare din stânga */}
           <div
-            className={`row-span-2 col-span-1 transition-all cursor-pointer ${
-              hoveredIndex !== null && hoveredIndex !== 0 ? "blur-xs" : ""
-            }`}
-            onMouseEnter={() => setHoveredIndex(0)}
-            onMouseLeave={() => setHoveredIndex(null)}
+            className={`row-span-2 col-span-1 transition-all cursor-pointer `}
+            // ${hoveredIndex !== null && hoveredIndex !== 0 ? "blur-xs" : ""}
+            // onMouseEnter={() => setHoveredIndex(0)}
+            // onMouseLeave={() => setHoveredIndex(null)}
           >
             <img
               src={images[0].src}
@@ -78,13 +73,10 @@ export default function CustomTechGrid() {
               key={index}
               className={`relative cursor-pointer ${
                 index === 3 ? "col-span-2" : "col-span-1"
-              } h-64 lg:h-auto transition-all ${
-                hoveredIndex !== null && hoveredIndex !== index + 1
-                  ? "blur-xs"
-                  : ""
-              }`}
-              onMouseEnter={() => setHoveredIndex(index + 1)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              } h-64 lg:h-auto transition-all`}
+              // ${ hoveredIndex !== null && hoveredIndex !== index + 1 ? "blur-xs" : ""}
+              // onMouseEnter={() => setHoveredIndex(index + 1)}
+              // onMouseLeave={() => setHoveredIndex(null)}
             >
               <img
                 src={img.src}

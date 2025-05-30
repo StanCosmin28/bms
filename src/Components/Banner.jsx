@@ -120,8 +120,8 @@ export default function Banner() {
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop />
-                  <stop offset="0.254095" stop-color="#000147" />
-                  <stop offset="1" stop-color="#000147" stop-opacity="0" />
+                  <stop offset="0.254095" stopColor="#000147" />
+                  <stop offset="1" stopColor="#000147" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>

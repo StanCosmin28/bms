@@ -32,8 +32,48 @@ function App() {
             </>
           }
         />
-        <Route path="/bms/domenii" element={<BlogPost />} />
-        <Route path="/bms/hot-feed" element={<BlogPost />} />
+        <Route
+          path="/bms/domenii"
+          element={
+            <>
+              <div className="mt-16">
+                {/* <BlogPost /> */}
+                <PostsSection />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/bms/domenii/:id"
+          element={
+            <>
+              <div className="mt-16">
+                <BlogPost />
+                <TechSection />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/bms/hot-feed"
+          element={
+            <>
+              <div className="mt-16">
+                {/* <BlogPost /> */}
+                <PostsSection />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/bms/hot-feed/:id"
+          element={
+            <>
+              <BlogPost />
+              <TechSection />
+            </>
+          }
+        />
       </Routes>
       <NewsletterSection />
       <Footer />

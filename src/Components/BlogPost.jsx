@@ -1,8 +1,22 @@
 import { useEffect, useState } from "react";
-import articleData from "../Model/dummyData";
+import { useParams } from "react-router-dom";
+import blogPostsData from "../Model/dummyData";
 
 export default function BlogPost() {
+  const { id } = useParams(); // Extract the id from the URL
   const [activeSection, setActiveSection] = useState("");
+
+  // Find the blog post matching the id
+  const post = blogPostsData.find((post) => post.id === id);
+
+  // Handle case when post is not found
+  if (!post) {
+    return (
+      <div className="min-h-screen bg-white flex items-center justify-center">
+        <h2 className="text-2xl text-gray-900">Post not found</h2>
+      </div>
+    );
+  }
 
   useEffect(() => {
     // Add smooth scrolling behavior
@@ -26,7 +40,7 @@ export default function BlogPost() {
     // Small delay to ensure DOM is ready
     const timer = setTimeout(() => {
       // Observe all sections
-      articleData.sections.forEach((section) => {
+      post.sections.forEach((section) => {
         const element = document.getElementById(section.id);
         if (element) {
           observer.observe(element);
@@ -34,8 +48,8 @@ export default function BlogPost() {
       });
 
       // Set initial active section
-      if (articleData.sections.length > 0) {
-        setActiveSection(articleData.sections[0].id);
+      if (post.sections.length > 0) {
+        setActiveSection(post.sections[0].id);
       }
     }, 100);
 
@@ -44,7 +58,7 @@ export default function BlogPost() {
       observer.disconnect();
       document.documentElement.style.scrollBehavior = "auto";
     };
-  }, []);
+  }, [post.sections]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -68,26 +82,26 @@ export default function BlogPost() {
         <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
           {/* Title */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center leading-tight mb-6">
-            {articleData.title}
+            {post.title}
           </h1>
 
           {/* Meta Information */}
           <div className="flex items-center justify-center text-sm text-gray-600 mb-8">
-            <span className="font-medium">{articleData.author}</span>
+            <span className="font-medium">{post.author}</span>
             <span className="mx-2">|</span>
-            <span>{articleData.date}</span>
+            <span>{post.date}</span>
             <span className="mx-2">|</span>
             <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-              {articleData.tag}
+              {post.tag}
             </span>
           </div>
         </div>
       </header>
 
       {/* Cover Image */}
-      <div className="w-full h-64 sm:h-80 lg:h-96 overflow-hidden">
+      <div className="w-full h-64 sm:h-80 lg:h-145 overflow-hidden">
         <img
-          src={articleData.coverImage || "/placeholder.svg"}
+          src={post.coverImage || "/placeholder.svg"}
           alt="Article cover"
           className="w-full h-full object-cover"
         />
@@ -104,7 +118,7 @@ export default function BlogPost() {
                   Table of Contents
                 </h3>
                 <nav className="space-y-2">
-                  {articleData.sections.map((section) => (
+                  {post.sections.map((section) => (
                     <button
                       key={section.id}
                       onClick={() => scrollToSection(section.id)}
@@ -125,7 +139,7 @@ export default function BlogPost() {
           {/* Article Content */}
           <main className="lg:col-span-3">
             <article className="prose prose-lg max-w-none">
-              {articleData.sections.map((section, index) => (
+              {post.sections.map((section, index) => (
                 <section
                   key={section.id}
                   id={section.id}
@@ -147,7 +161,7 @@ export default function BlogPost() {
                 Jump to Section
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {articleData.sections.map((section) => (
+                {post.sections.map((section) => (
                   <button
                     key={section.id}
                     onClick={() => scrollToSection(section.id)}
