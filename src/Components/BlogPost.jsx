@@ -3,25 +3,19 @@ import articleData from "../Model/dummyData";
 
 export default function BlogPost() {
   const [activeSection, setActiveSection] = useState("");
-  const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
     // Add smooth scrolling behavior
     document.documentElement.style.scrollBehavior = "smooth";
 
-    let scrollTimeout;
-
     // Intersection Observer to track active section
     const observer = new IntersectionObserver(
       (entries) => {
-        // Update active section only if not scrolling
-        if (!isScrolling) {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActiveSection(entry.target.id);
-            }
-          });
-        }
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
       },
       {
         rootMargin: "-20% 0px -60% 0px",
@@ -45,32 +39,14 @@ export default function BlogPost() {
       }
     }, 100);
 
-    // Listen for scroll end to re-enable intersection observer
-    const handleScroll = () => {
-      if (isScrolling) {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-          setIsScrolling(false);
-        }); // Increased to 1200ms to cover smooth scroll duration
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
     return () => {
       clearTimeout(timer);
-      clearTimeout(scrollTimeout);
-      window.removeEventListener("scroll", handleScroll);
       observer.disconnect();
       document.documentElement.style.scrollBehavior = "auto";
     };
-  }, [isScrolling]);
+  }, []);
 
   const scrollToSection = (sectionId) => {
-    // Set active section immediately on click
-    setIsScrolling(true);
-    setActiveSection(sectionId);
-
     const element = document.getElementById(sectionId);
     if (element) {
       const headerOffset = 100; // Adjust for fixed header
@@ -86,7 +62,7 @@ export default function BlogPost() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white mt-16">
       {/* Header Section */}
       <header className="w-full bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
