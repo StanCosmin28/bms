@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -41,14 +41,14 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
+        <Link
+          to="/bms/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span className="self-center text-2xl font-black whitespace-nowrap text-black ">
             BMS
           </span>
-        </a>
+        </Link>
         <div className="flex md:order-2 space-x-2 justify-center items-center">
           <button
             type="button"
@@ -197,13 +197,13 @@ export default function Navbar() {
           </div>
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/bms/hot-feed"
                 className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
               >
                 🔥 HOT FEED
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -214,12 +214,12 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/bms/domenii"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >
                 DOMENII
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
