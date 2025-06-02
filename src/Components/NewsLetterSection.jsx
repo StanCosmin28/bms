@@ -66,7 +66,10 @@ export default function NewsletterSection() {
         `}
       </style>
 
-      <section className="w-full bg-gradient-to-br from-[#2436D0] to-blue-200 py-16 relative overflow-hidden">
+      <section
+        id="newsletter"
+        className="w-full bg-gradient-to-br from-[#2436D0] to-blue-200 py-16 relative overflow-hidden"
+      >
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5"></div>
         <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200/20 rounded-full blur-3xl"></div>

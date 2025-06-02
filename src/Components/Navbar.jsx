@@ -10,6 +10,18 @@ export default function Navbar() {
   const toggleSearch = () => setIsSearchOpen(true);
   const searchInputRef = useRef(null);
 
+  const handleScrollToSection = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth",
+      });
+      setIsMenuOpen(false);
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -160,7 +172,10 @@ export default function Navbar() {
               />
             </svg>
           </button>
-          <button className="font-bold bg-blue-600 p-[7px] px-4 rounded-lg cursor-pointer">
+          <button
+            onClick={(e) => handleScrollToSection(e, "newsletter")}
+            className="font-bold bg-blue-600 p-[7px] px-4 rounded-lg cursor-pointer"
+          >
             Abonează-te
           </button>
         </div>
