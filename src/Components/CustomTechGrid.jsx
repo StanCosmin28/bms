@@ -1,4 +1,4 @@
-import images from "../Model/techGridData";
+import images from "../Posts/techGridData";
 export default function CustomTechGrid() {
   return (
     <div className="p-4 bg-gray-100 md:p-20 lg:p-40">

@@ -4,7 +4,8 @@ import CustomTechGrid from "../Components/CustomTechGrid";
 import PostsSection from "../Components/PostsSection";
 import HighlightedBlogPost from "../Components/HighlightedBlogPost";
 import Banner from "../Components/Banner";
-import BlogPost from "../Components/BlogPost";
+import DomainsBlogPost from "../Components/DomainsBlogPost";
+import HotFeedBlogPost from "../Components/HotFeedBlogPost";
 
 const routes = [
   {
@@ -33,7 +34,7 @@ const routes = [
     path: "/bms/domenii/:id",
     element: (
       <div className="mt-16">
-        <BlogPost />
+        <DomainsBlogPost />
         <TechSection />
       </div>
     ),
@@ -42,7 +43,7 @@ const routes = [
     path: "/bms/hot-feed",
     element: (
       <div className="mt-16">
-        <PostsSection />
+        <TechSection />
       </div>
     ),
   },
@@ -50,7 +51,7 @@ const routes = [
     path: "/bms/hot-feed/:id",
     element: (
       <div>
-        <BlogPost />
+        <HotFeedBlogPost />
         <TechSection />
       </div>
     ),

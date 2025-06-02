@@ -1,4 +1,4 @@
-import articles from "../Model/postsSectionData";
+import articles from "../Posts/domainsData";
 export default function PostsSection() {
   return (
     <section className="bg-gray-100 text-gray-900 py-12 px-4">
@@ -10,17 +10,27 @@ export default function PostsSection() {
           {articles.map((product, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex flex-col items-center text-center p-4"
+              className="cursor-pointer bg-gray-50 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex flex-col items-center text-center p-4"
             >
-              <a href={product.link} className="block w-full">
+              <a
+                href={`http://localhost:5173/bms/${
+                  product.isHot ? "hot-feed" : "domenii"
+                }/${product.id}`}
+                className="block w-full"
+              >
                 <img
-                  src={product.image}
+                  src={product.coverImage}
                   alt={product.title}
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
               </a>
               <h2 className="text-lg font-semibold text-gray-800 mb-2">
-                <a href={product.link} className="hover:text-blue-600">
+                <a
+                  href={`http://localhost:5173/bms/${
+                    product.isHot ? "hot-feed" : "domenii"
+                  }/${product.id}`}
+                  className="hover:text-blue-600"
+                >
                   {product.title}
                 </a>
               </h2>
