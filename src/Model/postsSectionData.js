@@ -6,8 +6,8 @@ const articles = [
     description:
       "Controlează temperatura casei tale de oriunde, economisind energie și îmbunătățind confortul.",
     link: "#",
-    buttonText: "Citeste ",
-    buttonLink: "#",
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -16,8 +16,8 @@ const articles = [
     description:
       "Personalizează iluminatul casei tale cu culori și intensități ajustabile prin aplicație.",
     link: "#",
-    buttonText: "Citeste ",
-    buttonLink: "#",
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -26,8 +26,8 @@ const articles = [
     description:
       "Monitorizează-ți casa în timp real cu video HD și detectare de mișcare.",
     link: "#",
-    buttonText: "Citeste ",
-    buttonLink: "#",
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -36,8 +36,8 @@ const articles = [
     description:
       "Controlează dispozitivele smart și ascultă muzică cu comenzi vocale prin Alexa.",
     link: "#",
-    buttonText: "Citeste ",
-    buttonLink: "#",
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -46,8 +46,8 @@ const articles = [
     description:
       "Blochează și deblochează ușa casei tale direct de pe telefon, cu acces securizat.",
     link: "#",
-    buttonText: "Citeste ",
-    buttonLink: "#",
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -56,8 +56,8 @@ const articles = [
     description:
       "Monitorizează nivelul de umiditate din casă pentru un mediu sănătos.",
     link: "#",
-    buttonText: "Citeste ",
-    buttonLink: "#",
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -66,8 +66,8 @@ const articles = [
     description:
       "Controlează dispozitivele electrice de la distanță și setează programe automate.",
     link: "#",
-    buttonText: "Citeste ",
-    buttonLink: "#",
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -76,8 +76,8 @@ const articles = [
     description:
       "Uda-ți grădina automat, economisind apă, cu control prin aplicație.",
     link: "#",
-    buttonText: "Citeste ",
-    buttonLink: "#",
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
 ];
 export default articles;

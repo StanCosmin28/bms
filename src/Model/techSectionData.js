@@ -5,7 +5,8 @@ const cards = [
     title: "Explorarea Lumii Tech",
     description:
       "Descoperă cele mai recente inovații din domeniul tehnologiei și impactul lor asupra vieții tale.",
-    tags: ["Info fresh", "Ștrop de FUN"],
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -13,7 +14,8 @@ const cards = [
     title: "Microcipuri Avansate",
     description:
       "Află cum microcipurile moderne revoluționează industria tech și ce înseamnă asta pentru viitor.",
-    tags: ["Vibe pro", "Info fresh"],
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -21,7 +23,8 @@ const cards = [
     title: "Smartphone-uri de Top",
     description:
       "Top 5 smartphone-uri care domină piața în 2025 – specificații, performanțe și design.",
-    tags: ["Info fresh", "Vibe pro"],
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
   {
     image:
@@ -29,7 +32,8 @@ const cards = [
     title: "Entuziaști Tech",
     description:
       "Suntem o gașcă de entuziaști tech, gata să-ți aducem cele mai tari noutăți din lumea BMS.",
-    tags: ["Info fresh", "Vibe pro", "Ștrop de FUN"],
+    tag: "#Inovatii",
+    date: "28 August 2025",
   },
 ];
 export default cards;

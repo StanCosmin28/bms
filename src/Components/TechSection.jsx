@@ -18,20 +18,23 @@ export default function TechSection() {
                 alt={card.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-4">
+              <div className="p-4 ">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {card.title}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">{card.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {card.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="text-xs font-medium text-blue-600 bg-blue-100 rounded-full px-2 py-1"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                <div className="flex flex-wrap gap-2 flex-row items-center justify-between">
+                  <span className="text-xs text-black/50 font-semibold">
+                    {card.date}
+                  </span>
+                  {/* {card.tags.map((tag, tagIndex) => ( */}
+                  <span
+                    // key={tagIndex}
+                    className="text-xs font-medium text-blue-600 bg-blue-100 rounded-full px-2 py-1"
+                  >
+                    {card.tag}
+                  </span>
+                  {/* // ))} */}
                 </div>
               </div>
             </div>
