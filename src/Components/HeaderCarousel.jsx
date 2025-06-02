@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import articles from "../Posts/headerData";
 import articles from "../Posts/hotFeedData";
 
 export default function HeaderCarousel() {
