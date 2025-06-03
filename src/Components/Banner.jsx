@@ -92,7 +92,7 @@ export default function Banner() {
         <div
           className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://plus.unsplash.com/premium_photo-1716603741751-c558f6e805f0?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundImage: `url('https://stancosmin28.github.io/bms/banner.png')`,
           }}
         >
           {/* Overlay semi-transparent cu gradient */}
