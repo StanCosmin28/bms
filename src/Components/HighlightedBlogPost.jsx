@@ -1,13 +1,13 @@
 export default function HighlightedBlogPost({
-  imageSrc = "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=3530&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  imageAlt = "Smart Home Setup",
-  title = "Transformă-ți Casa cu Tehnologia Smart Home",
-  description = "Descoperă cele mai noi dispozitive smart home care îți fac viața mai ușoară, mai sigură și mai confortabilă. Controlează totul dintr-o singură aplicație!",
   buttonText = "Explorează Acum",
-  buttonLink = "#",
-  date = "12 Septembrie 2025",
-  category = "#Inovații BMS",
-  author = "Bransha",
+  id,
+  coverImage,
+  title,
+  description,
+  date,
+  author,
+  tag,
+  isHot,
 }) {
   return (
     <section className="bg-gray-100 text-gray-900 py-12 px-4">
@@ -15,8 +15,8 @@ export default function HighlightedBlogPost({
         {/* Imaginea - Stânga */}
         <div className="w-full lg:w-1/2">
           <img
-            src={imageSrc}
-            alt={imageAlt}
+            src={coverImage}
+            alt={title}
             className="w-full h-auto max-h-96 object-cover rounded-xl shadow-md"
           />
         </div>
@@ -39,12 +39,14 @@ export default function HighlightedBlogPost({
           <div className="w-full h-5 flex justify-between items-center flex-row mb-6 md:mb-4">
             <p className="font-normal text-gray-400">{date}</p>
             <a className="text-blue-500" href="#">
-              {category}
+              {tag}
             </a>
           </div>
           {buttonText && (
             <a
-              href={buttonLink}
+              href={`http://localhost:5173/bms/${
+                isHot ? "hot-feed" : "domenii"
+              }/${id}`}
               className="inline-block bg-blue-100 text-blue-700 px-6 py-3 rounded-lg hover:bg-blue-200 transition-colors text-center"
             >
               {buttonText}
