@@ -13,8 +13,9 @@ const images = [
   },
   {
     src: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=3530&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Sistem de Securitate",
-    description: "Monitorizează casa cu camere și alarme integrate.",
+    title:
+      "Suntem o gașcă de entuziaști tech, gata să-ți aducem cele mai tari noutăți din lumea BMS.",
+    description: "Info fresh | Vibe profi | Strop de FUN",
   },
   {
     src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=60",

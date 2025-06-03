@@ -44,9 +44,11 @@ export default function CustomTechGrid() {
               className="w-full h-full object-cover rounded-lg"
             />
             {images[4].title && images[4].description && (
-              <div className="absolute h-full w-full bottom-0 left-0 right-0 bg-purple-400 text-white p-2 rounded-lg flex flex-col justify-center items-center">
-                <h3 className="text-sm font-semibold">{images[4].title}</h3>
-                <p className="text-xs">{images[4].description}</p>
+              <div className="absolute h-full w-full bottom-0 left-0 right-0 bg-[#5154FF] text-white p-2 rounded-lg flex flex-col justify-center items-center text-center gap-2">
+                <h3 className="text-md font-bold px-2 md:px-15">
+                  {images[4].title}
+                </h3>
+                <p className="text-md">{images[4].description}</p>
               </div>
             )}
           </div>
@@ -80,9 +82,9 @@ export default function CustomTechGrid() {
               />
               {/* Textul apare pe ultima imagine (index 4 în slice(1)) */}
               {index === 3 && images[4].title && (
-                <div className="absolute h-full w-full bottom-0 left-0 right-0 bg-purple-400 text-white p-4 rounded-lg flex flex-col justify-center items-center">
-                  <h3 className="text-lg font-semibold">{images[4].title}</h3>
-                  <p className="text-sm">{images[4].description}</p>
+                <div className="absolute h-full w-full bottom-0 left-0 right-0 bg-[#5154FF] text-white p-5 rounded-lg flex flex-col justify-center items-center text-center gap-5">
+                  <h3 className="text-lg font-bold p-10">{images[4].title}</h3>
+                  <p className="text-lg font-bold">{images[4].description}</p>
                 </div>
               )}
             </div>
