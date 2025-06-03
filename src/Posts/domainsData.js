@@ -7,7 +7,7 @@ const articles = [
     author: "Sarah Chen",
     description:
       "Controlează temperatura casei tale de oriunde, economisind energie și îmbunătățind confortul.",
-    tag: "#Inovatii",
+    tag: "Eficienta Energetica",
     date: "28 August 2025",
     isHot: false,
     sections: [
@@ -48,7 +48,7 @@ const articles = [
     author: "Sarah Chen",
     description:
       "Personalizează iluminatul casei tale cu culori și intensități ajustabile prin aplicație.",
-    tag: "#Inovatii",
+    tag: "Inovatii BMS",
     date: "28 August 2025",
     isHot: false,
     sections: [
@@ -89,7 +89,7 @@ const articles = [
     author: "Sarah Chen",
     description:
       "Monitorizează-ți casa în timp real cu video HD și detectare de mișcare.",
-    tag: "#Inovatii",
+    tag: "Sustenabilitate",
     date: "28 August 2025",
     isHot: false,
     sections: [
@@ -123,7 +123,7 @@ const articles = [
     author: "Sarah Chen",
     description:
       "Controlează dispozitivele smart și ascultă muzică cu comenzi vocale prin Alexa.",
-    tag: "#Inovatii",
+    tag: "Date & Statistici",
     date: "28 August 2025",
     isHot: false,
     sections: [
@@ -164,7 +164,7 @@ const articles = [
     author: "Sarah Chen",
     description:
       "Accesează locuința fără chei și monitorizează cine intră și iese, direct de pe telefon.",
-    tag: "#Inovatii",
+    tag: "Ghiduri & Tutoriale",
     date: "28 August 2025",
     isHot: false,
     sections: [
@@ -204,7 +204,7 @@ const articles = [
     author: "Sarah Chen",
     description:
       "Monitorizează umiditatea din locuință și primește alerte când nivelurile sunt nesănătoase.",
-    tag: "#Inovatii",
+    tag: "Proiecte & Aplicatii",
     date: "28 August 2025",
     isHot: false,
     sections: [
@@ -239,7 +239,7 @@ const articles = [
     author: "Sarah Chen",
     description:
       "Controlează alimentarea dispozitivelor de la distanță și monitorizează consumul de energie.",
-    tag: "#Inovatii",
+    tag: "Eficienta Energetica",
     date: "28 August 2025",
     isHot: false,
     sections: [
@@ -278,7 +278,7 @@ const articles = [
     author: "Sarah Chen",
     description:
       "Udă grădina automat în funcție de vreme și nevoile plantelor.",
-    tag: "#Inovatii",
+    tag: "Sustenabilitate",
     date: "28 August 2025",
     isHot: false,
     sections: [
