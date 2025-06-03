@@ -7,7 +7,7 @@ const cards = [
     author: "Sarah Chen",
     description:
       "Descoperă cele mai recente inovații din domeniul tehnologiei și impactul lor asupra vieții tale.",
-    tag: "#Inovatii",
+    tag: "Inovatii BMS",
     date: "28 August 2025",
     isHot: true,
     sections: [
@@ -49,7 +49,7 @@ const cards = [
     author: "Sarah Chen",
     description:
       "Află cum microcipurile moderne revoluționează industria tech și ce înseamnă asta pentru viitor.",
-    tag: "#Inovatii",
+    tag: "Eficienta Energetica",
     date: "28 August 2025",
     isHot: true,
     sections: [
@@ -87,7 +87,7 @@ const cards = [
     author: "Sarah Chen",
     description:
       "Top 5 smartphone-uri care domină piața în 2025 – specificații, performanțe și design.",
-    tag: "#Inovatii",
+    tag: "Ghiduri & Tutoriale",
     date: "28 August 2025",
     isHot: true,
     sections: [
@@ -126,7 +126,7 @@ const cards = [
     author: "Sarah Chen",
     description:
       "Suntem o gașcă de entuziaști tech, gata să-ți aducem cele mai tari noutăți din lumea BMS.",
-    tag: "#Inovatii",
+    tag: "Proiecte & Aplicatii",
     date: "28 August 2025",
     isHot: true,
     sections: [
@@ -160,4 +160,5 @@ const cards = [
     ],
   },
 ];
+
 export default cards;
