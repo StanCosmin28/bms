@@ -1,5 +1,5 @@
 import HeaderCarousel from "../Components/HeaderCarousel";
-import TechSection from "../Components/TechSection";
+import HomeHotFeed from "../Components/HomeHotFeed";
 import CustomTechGrid from "../Components/CustomTechGrid";
 // import PostsSection from "../Components/DomainsSection";
 import HighlightedBlogPost from "../Components/HighlightedBlogPost";
@@ -20,7 +20,7 @@ const routes = [
         <HeaderCarousel />
         <CustomTechGrid />
         <Banner />
-        <TechSection />
+        <HomeHotFeed />
         <HighlightedBlogPost {...data[0]} />
         <HomeDomainsSection />
         <HighlightedBlogPost {...data[1]} />
@@ -40,7 +40,7 @@ const routes = [
     element: (
       <div className="mt-16">
         <DomainsBlogPost />
-        <TechSection />
+        <HomeHotFeed />
       </div>
     ),
   },
@@ -48,7 +48,7 @@ const routes = [
     path: "/bms/hot-feed",
     element: (
       <div className="mt-16">
-        <TechSection />
+        <HomeHotFeed />
       </div>
     ),
   },
@@ -57,7 +57,7 @@ const routes = [
     element: (
       <div className="mt-16">
         <HotFeedBlogPost />
-        <TechSection />
+        <HomeHotFeed />
       </div>
     ),
   },
