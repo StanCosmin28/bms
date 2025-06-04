@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -9,6 +10,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleSearch = () => setIsSearchOpen(true);
   const searchInputRef = useRef(null);
+  const location = useLocation();
 
   const handleScrollToSection = (e, targetId) => {
     e.preventDefault();
@@ -22,6 +24,7 @@ export default function Navbar() {
     }
   };
 
+  // Efect pentru gestionarea vizibilității navbar-ului
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -40,11 +43,17 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
     document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [prevScrollPos]);
+
+  // Efect separat pentru derularea la top la schimbarea rutei
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location]);
 
   return (
     <nav
@@ -87,7 +96,6 @@ export default function Navbar() {
             <span className="sr-only">Search</span>
           </button>
           <div className="relative hidden md:flex items-center">
-            {/* Iconul de căutare pentru tabletă și desktop */}
             {!isSearchOpen && (
               <button
                 onClick={toggleSearch}
@@ -111,7 +119,6 @@ export default function Navbar() {
                 <span className="sr-only cursor-pointer">Open search</span>
               </button>
             )}
-            {/* Input-ul de căutare cu animație */}
             <div
               className={`ml-2 transition-all duration-300 ease-in-out ${
                 isSearchOpen
