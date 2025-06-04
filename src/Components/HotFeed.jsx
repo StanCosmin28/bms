@@ -1,5 +1,5 @@
 import cards from "../Posts/hotFeedData";
-export default function HomeHotFeed() {
+export default function HotFeed() {
   return (
     <section className="bg-gray-100 text-gray-900 py-12 px-4">
       <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">

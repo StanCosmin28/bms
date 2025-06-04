@@ -162,7 +162,7 @@ export default function DomainsSection() {
           {filteredArticles.map((product, index) => (
             <div
               key={index}
-              className="cursor-pointer bg-gray-50 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex flex-col items-center text-center p-4"
+              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 cursor-pointer relative"
             >
               <a
                 href={`http://localhost:5173/bms/${
@@ -173,30 +173,28 @@ export default function DomainsSection() {
                 <img
                   src={product.coverImage}
                   alt={product.title}
-                  className="w-full h-40 object-cover rounded-lg mb-4"
+                  className="w-full h-48 object-cover"
                 />
+
+                <div className="p-4 flex flex-col justify-between min-h-[180px]">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                      {product.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4 flex-grow">
+                      {product.description}
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2 flex-row items-center justify-between">
+                    <span className="lg:text-[10px] xl:text-xs text-black/50 font-semibold">
+                      {product.date}
+                    </span>
+                    <span className="lg:text-[10px] xl:text-xs font-medium text-blue-600 bg-blue-100 rounded-full px-2 py-1">
+                      {product.tag}
+                    </span>
+                  </div>
+                </div>
               </a>
-              <h2 className="text-lg font-semibold text-gray-800 mb-2">
-                <a
-                  href={`http://localhost:5173/bms/${
-                    product.isHot ? "hot-feed" : "domenii"
-                  }/${product.id}`}
-                  className="hover:text-blue-600"
-                >
-                  {product.title}
-                </a>
-              </h2>
-              <p className="text-gray-600 text-sm mb-4">
-                {product.description}
-              </p>
-              <div className="w-[95%] flex flex-wrap gap-2 flex-row items-center justify-between">
-                <span className="text-xs text-black/50 font-semibold">
-                  {product.date}
-                </span>
-                <span className="text-xs font-medium text-blue-600 bg-blue-100 rounded-full px-2 py-1">
-                  {product.tag}
-                </span>
-              </div>
             </div>
           ))}
         </div>

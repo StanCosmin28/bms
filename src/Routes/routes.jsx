@@ -6,6 +6,7 @@ import HighlightedBlogPost from "../Components/HighlightedBlogPost";
 import Banner from "../Components/Banner";
 import DomainsBlogPost from "../Components/DomainsBlogPost";
 import HotFeedBlogPost from "../Components/HotFeedBlogPost";
+import HotFeed from "../Components/HotFeed";
 import articles from "../Posts/domainsData";
 import DomainsSection from "../Components/DomainsSection";
 import HomeDomainsSection from "../Components/HomeDomainsSection";
@@ -48,7 +49,7 @@ const routes = [
     path: "/bms/hot-feed",
     element: (
       <div className="mt-16">
-        <HomeHotFeed />
+        <HotFeed />
       </div>
     ),
   },
