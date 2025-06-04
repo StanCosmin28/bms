@@ -1,12 +1,15 @@
 import HeaderCarousel from "../Components/HeaderCarousel";
 import TechSection from "../Components/TechSection";
 import CustomTechGrid from "../Components/CustomTechGrid";
-import PostsSection from "../Components/PostsSection";
+// import PostsSection from "../Components/DomainsSection";
 import HighlightedBlogPost from "../Components/HighlightedBlogPost";
 import Banner from "../Components/Banner";
 import DomainsBlogPost from "../Components/DomainsBlogPost";
 import HotFeedBlogPost from "../Components/HotFeedBlogPost";
 import articles from "../Posts/domainsData";
+import DomainsSection from "../Components/DomainsSection";
+import HomeDomainsSection from "../Components/HomeDomainsSection";
+import PartnersSection from "../Components/PartnersSection";
 
 const data = articles.slice(0, 2);
 const routes = [
@@ -19,7 +22,7 @@ const routes = [
         <Banner />
         <TechSection />
         <HighlightedBlogPost {...data[0]} />
-        <PostsSection />
+        <HomeDomainsSection />
         <HighlightedBlogPost {...data[1]} />
       </div>
     ),
@@ -28,7 +31,7 @@ const routes = [
     path: "/bms/domenii",
     element: (
       <div className="mt-16">
-        <PostsSection />
+        <DomainsSection />
       </div>
     ),
   },
@@ -52,9 +55,17 @@ const routes = [
   {
     path: "/bms/hot-feed/:id",
     element: (
-      <div>
+      <div className="mt-16">
         <HotFeedBlogPost />
         <TechSection />
+      </div>
+    ),
+  },
+  {
+    path: "/bms/parteneri",
+    element: (
+      <div className="mt-16">
+        <PartnersSection />
       </div>
     ),
   },

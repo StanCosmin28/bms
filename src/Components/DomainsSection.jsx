@@ -1,7 +1,7 @@
 import { useState } from "react";
 import articles from "../Posts/domainsData";
 
-export default function PostsSection() {
+export default function DomainsSection() {
   const [selectedTag, setSelectedTag] = useState(null);
 
   const handleTagClick = (tag) => {
@@ -15,9 +15,13 @@ export default function PostsSection() {
   return (
     <section className="bg-gray-100 text-gray-900 py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-left mb-8">
-          Articole Recomandate
-        </h1>
+        <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+          <div className="bg-blue-800 text-white text-center py-6 px-8 mb-8 rounded-lg">
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-wide">
+              DOMENII
+            </h1>
+          </div>
+        </div>
         <div className="w-full h-20 flex flex-row gap-4 justify-center items-center">
           <button
             className={`py-2 px-6 border-1 border-black rounded-full cursor-pointer ${

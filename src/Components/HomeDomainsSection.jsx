@@ -1,19 +1,7 @@
-import { useState } from "react";
 import articles from "../Posts/domainsData";
 
-export default function PostsSection() {
-  const [selectedTag, setSelectedTag] = useState(null);
-
-  const data = articles.slice(0, 6);
-  console.log(data);
-
-  const handleTagClick = (tag) => {
-    setSelectedTag(tag === selectedTag ? null : tag); // Toggle filter off if the same tag is clicked
-  };
-
-  const filteredArticles = selectedTag
-    ? articles.filter((article) => article.tag === selectedTag)
-    : articles;
+export default function HomeDomainsSection() {
+  const data = articles.slice(0, 4);
 
   return (
     <section className="bg-gray-100 text-gray-900 py-12 px-4">
@@ -21,66 +9,8 @@ export default function PostsSection() {
         <h1 className="text-3xl md:text-4xl font-bold text-left mb-8">
           Articole Recomandate
         </h1>
-        <div className="w-full h-20 flex flex-row gap-4 justify-center items-center">
-          <button
-            className={`py-2 px-6 border-1 border-black rounded-full cursor-pointer ${
-              selectedTag === "Eficienta Energetica"
-                ? "bg-blue-600 text-white"
-                : ""
-            }`}
-            onClick={() => handleTagClick("Eficienta Energetica")}
-          >
-            Eficienta Energetica
-          </button>
-          <button
-            className={`py-2 px-6 border-1 border-black rounded-full cursor-pointer ${
-              selectedTag === "Inovatii BMS" ? "bg-blue-600 text-white" : ""
-            }`}
-            onClick={() => handleTagClick("Inovatii BMS")}
-          >
-            Inovatii BMS
-          </button>
-          <button
-            className={`py-2 px-6 border-1 border-black rounded-full cursor-pointer ${
-              selectedTag === "Sustenabilitate" ? "bg-blue-600 text-white" : ""
-            }`}
-            onClick={() => handleTagClick("Sustenabilitate")}
-          >
-            Sustenabilitate
-          </button>
-          <button
-            className={`py-2 px-6 border-1 border-black rounded-full cursor-pointer ${
-              selectedTag === "Date & Statistici"
-                ? "bg-blue-600 text-white"
-                : ""
-            }`}
-            onClick={() => handleTagClick("Date & Statistici")}
-          >
-            Date & Statistici
-          </button>
-          <button
-            className={`py-2 px-6 border-1 border-black rounded-full cursor-pointer ${
-              selectedTag === "Ghiduri & Tutoriale"
-                ? "bg-blue-600 text-white"
-                : ""
-            }`}
-            onClick={() => handleTagClick("Ghiduri & Tutoriale")}
-          >
-            Ghiduri & Tutoriale
-          </button>
-          <button
-            className={`py-2 px-6 border-1 border-black rounded-full cursor-pointer ${
-              selectedTag === "Proiecte & Aplicatii"
-                ? "bg-blue-600 text-white"
-                : ""
-            }`}
-            onClick={() => handleTagClick("Proiecte & Aplicatii")}
-          >
-            Proiecte & Aplicatii
-          </button>
-        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {filteredArticles.map((product, index) => (
+          {data.map((product, index) => (
             <div
               key={index}
               className="cursor-pointer bg-gray-50 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex flex-col items-center text-center p-4"

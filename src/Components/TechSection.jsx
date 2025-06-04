@@ -1,11 +1,14 @@
-// import { useState } from "react";
 import cards from "../Posts/hotFeedData";
 export default function TechSection() {
   return (
-    <section className="py-10 px-4 bg-gray-100">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-black">
-        Ultimele Noutăți
-      </h1>
+    <section className="bg-gray-100 text-gray-900 py-12 px-4">
+      <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+        <div className="bg-blue-800 text-white text-center py-6 px-8 mb-8 rounded-lg">
+          <h1 className="text-2xl sm:text-3xl font-bold tracking-wide">
+            🔥 HOT FEED
+          </h1>
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card, index) => (
