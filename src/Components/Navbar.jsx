@@ -181,7 +181,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={(e) => handleScrollToSection(e, "newsletter")}
-            className="font-bold bg-blue-600 p-[7px] px-4 rounded-lg cursor-pointer"
+            className="font-bold bg-blue-600 p-[7px] px-4 rounded-lg cursor-pointer hover:scale-105 hover:bg-blue-700 transition-all duration-250"
           >
             Abonează-te
           </button>

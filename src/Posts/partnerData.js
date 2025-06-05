@@ -3,7 +3,8 @@ const partnersData = [
     name: "Bransha",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfD09kj62wIXzdJ9cu7Zs-nRLG7uHi-sQ4Pw&s",
     website: "https://bransha.ro",
-    shortDescription: "Lider în soluții tehnologice avansate.",
+    shortDescription:
+      "BRANSHA este o companie R&D specializată în soluții inteligente pentru automatizarea clădirilor. Dezvoltă și comercializează software propriu (Munn și NESTOR), panouri electrice cu module dedicate și dispozitive smart precum termostate WiFi, întrerupătoare inteligente și cititoare de carduri.",
     media:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFarQ0TfjlkG_l3VaBoVq9BGAIxEjd5coklg&s",
     expertise:
