@@ -20,7 +20,7 @@ const routes = [
     element: (
       <div>
         <HeaderCarousel />
-        {/* <SolarSystemComponent /> */}
+        <SolarSystemComponent />
         <CustomTechGrid />
         <Banner />
         <HomeHotFeed />
