@@ -17,9 +17,6 @@ export default function HeaderCarousel() {
     );
   };
 
-  // Obține slide-ul curent
-  // const currentSlideData = data[currentSlide];
-
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {articlesData.map((slide, index) => (
@@ -47,7 +44,7 @@ export default function HeaderCarousel() {
                 </p>
                 <a
                   href={`http://localhost:5173/bms/hot-feed/${slide.id}`}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors max-w-fit inline-block z-10"
+                  className="bg-transparent border-amber-50 border-1 hover:bg-white hover:scale-105 hover:text-black text-white font-semibold py-4 px-5 rounded-full transition-all duration-200 max-w-fit inline-block z-10"
                 >
                   Citește tot articolul
                 </a>
@@ -58,10 +55,10 @@ export default function HeaderCarousel() {
       ))}
 
       {/* Butoanele de navigare cu z-index mai mare */}
-      <div className="absolute bottom-4 right-4 flex space-x-2 z-20">
+      <div className="absolute md:bottom-4 bottom-10 right-4 flex space-x-2 z-20">
         <button
           onClick={prevSlide}
-          className="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors cursor-pointer shadow-lg"
+          className="bg-transparent border-1 border-amber-100 text-white hover:text-black hover:scale-105 px-6 py-3 rounded-full hover:bg-gray-200 transition-all duration-250 cursor-pointer shadow-lg"
           aria-label="Previous slide"
         >
           <svg
@@ -81,7 +78,7 @@ export default function HeaderCarousel() {
         </button>
         <button
           onClick={nextSlide}
-          className="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors cursor-pointer shadow-lg"
+          className="bg-transparent border-1 border-amber-100 text-white hover:text-black hover:scale-105 px-6 py-3 rounded-full hover:bg-gray-200 transition-all duration-250 cursor-pointer shadow-lg"
           aria-label="Next slide"
         >
           <svg
