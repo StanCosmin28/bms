@@ -13,51 +13,44 @@ const SolarSystemComponent = () => {
     {
       radius: 100,
       items: [
-        { icon: Power, angle: 0 },
-        { icon: BarChart3, angle: 180 },
+        { icon: Power, angle: 0, text: "Power test" },
+        { icon: BarChart3, angle: 180, text: "Analytics test" },
       ],
       duration: 20,
     },
     {
       radius: 160,
       items: [
-        { icon: Settings, angle: 0 },
-        { icon: Rocket, angle: 120 },
-        { icon: Star, angle: 240 },
+        { icon: Settings, angle: 0, text: "Settings test" },
+        { icon: Rocket, angle: 120, text: "Launch test" },
+        { icon: Star, angle: 240, text: "Star test" },
       ],
       duration: 30,
     },
     {
       radius: 220,
       items: [
-        { icon: Moon, angle: 0 },
-        { icon: Globe, angle: 90 },
-        { icon: Globe, angle: 180 },
-        { icon: Rocket, angle: 270 },
-        { icon: Rocket, angle: 270 },
+        { icon: Moon, angle: 0, text: "Moon test" },
+        { icon: Globe, angle: 180, text: "Globe test" },
       ],
       duration: 40,
     },
   ];
 
-  const OrbitItem = ({ icon: Icon, radius, angle, duration }) => {
+  const OrbitItem = ({ icon: Icon, radius, angle, duration, text }) => {
     return (
       <div
-        className="absolute w-12 h-12 flex items-center justify-center"
+        className="absolute hover:w-34 w-12 h-12 flex items-center justify-center"
         style={{
           transform: `translate(-50%, -50%)`,
-          animation: `orbit-${radius} ${duration}s linear infinite`,
           left: "50%",
           top: "50%",
+          animation: `orbit-${radius}-${angle} ${duration}s linear infinite`,
         }}
       >
-        <div
-          className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center border border-gray-200 hover:shadow-xl transition-shadow cursor-pointer"
-          style={{
-            transform: `rotate(${angle}deg) translateX(${radius}px) rotate(-${angle}deg)`,
-          }}
-        >
+        <div className="hover:w-34 h-12 bg-white rounded-full shadow-lg flex items-center justify-center border border-gray-200 hover:shadow-xl transition-shadow cursor-pointer gap-2">
           <Icon className="w-5 h-5 text-gray-700" />
+          <p className="text-xs text-gray-700 font-medium">{text}</p>
         </div>
       </div>
     );
@@ -78,90 +71,32 @@ const SolarSystemComponent = () => {
 
   return (
     <div className="relative w-full h-screen flex items-center justify-center bg-white overflow-hidden">
-      {/* Stars background */}
-      <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-white rounded-full opacity-60"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `twinkle ${
-                2 + Math.random() * 3
-              }s ease-in-out infinite alternate`,
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Animation styles */}
       <style>{`
-        @keyframes orbit-100 {
-          from {
-            transform: translate(-50%, -50%) rotate(0deg);
+        ${orbitalRings
+          .map((ring) =>
+            ring.items
+              .map(
+                (item) => `
+          @keyframes orbit-${ring.radius}-${item.angle} {
+            from {
+              transform: translate(-50%, -50%) rotate(${
+                item.angle
+              }deg) translateX(${ring.radius}px) rotate(-${item.angle}deg);
+            }
+            to {
+              transform: translate(-50%, -50%) rotate(${
+                item.angle + 360
+              }deg) translateX(${ring.radius}px) rotate(-${
+                  item.angle + 360
+                }deg);
+            }
           }
-          to {
-            transform: translate(-50%, -50%) rotate(360deg);
-          }
-        }
-        @keyframes orbit-160 {
-          from {
-            transform: translate(-50%, -50%) rotate(0deg);
-          }
-          to {
-            transform: translate(-50%, -50%) rotate(360deg);
-          }
-        }
-        @keyframes orbit-220 {
-          from {
-            transform: translate(-50%, -50%) rotate(0deg);
-          }
-          to {
-            transform: translate(-50%, -50%) rotate(360deg);
-          }
-        }
-        @keyframes twinkle {
-          0% {
-            opacity: 0.3;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
+        `
+              )
+              .join("")
+          )
+          .join("")}
       `}</style>
-      {/* <style>{`
-            @keyframes orbit-100 {
-              from { transform: translate(-50%, -50%) rotate(0deg); }
-              to { transform: translate(-50%, -50%) rotate(360deg); }
-            }
-            @keyframes orbit-160 {
-              from { transform: translate(-50%, -50%) rotate(0deg); }
-              to { transform: translate(-50%, -50%) rotate(360deg); }
-            }
-            @keyframes orbit-220 {
-              from { transform: translate(-50%, -50%) rotate(0deg); }
-              to { transform: translate(-50%, -50%) rotate(360deg); }
-            }
-            @keyframes counter-rotate-100 {
-              from { transform: rotate(0deg); }
-              to { transform: rotate(-360deg); }
-            }
-            @keyframes counter-rotate-160 {
-              from { transform: rotate(0deg); }
-              to { transform: rotate(-360deg); }
-            }
-            @keyframes counter-rotate-220 {
-              from { transform: rotate(0deg); }
-              to { transform: rotate(-360deg); }
-            }
-            @keyframes twinkle {
-              0% { opacity: 0.3; }
-              100% { opacity: 1; }
-            }
-          `}</style> */}
-
-      {/* Solar System Container */}
       <div className="relative w-full h-full max-w-4xl max-h-4xl">
         {/* Orbital Ring Guides */}
         {orbitalRings.map((ring, index) => (
@@ -184,6 +119,7 @@ const SolarSystemComponent = () => {
               radius={ring.radius}
               angle={item.angle}
               duration={ring.duration}
+              text={item.text}
             />
           ))
         )}
@@ -191,4 +127,5 @@ const SolarSystemComponent = () => {
     </div>
   );
 };
+
 export default SolarSystemComponent;

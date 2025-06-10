@@ -11,7 +11,8 @@ import articles from "../Posts/domainsData";
 import DomainsSection from "../Components/DomainsSection";
 import HomeDomainsSection from "../Components/HomeDomainsSection";
 import PartnersSection from "../Components/PartnersSection";
-import SolarSystemComponent from "../Components/SolarSystemComponent";
+// import SolarSystemComponent from "../Components/SolarSystemComponent";
+// import ScrollAnimationComponent from "../Components/Test";
 
 const data = articles.slice(0, 2);
 const routes = [
@@ -20,7 +21,8 @@ const routes = [
     element: (
       <div>
         <HeaderCarousel />
-        <SolarSystemComponent />
+        {/* <ScrollAnimationComponent /> */}
+        {/* <SolarSystemComponent />   */}
         <CustomTechGrid />
         <Banner />
         <HomeHotFeed />
