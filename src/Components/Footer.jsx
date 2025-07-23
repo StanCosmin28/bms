@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-white text-gray-900 py-5 md:py-12 px-4 border-t border-gray-200">
+    <footer className="bg-gray-100 text-gray-900 py-5 md:py-12 px-4 border-t border-gray-200">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between md:px-10 px-2">
         {/* Secțiunea Superioară: Logo și Descriere */}
         <div className="flex flex-col items-left mb-10 lg:items-start lg:text-left">

@@ -66,14 +66,14 @@ const routes = [
       </div>
     ),
   },
-  {
-    path: "/bms/parteneri",
-    element: (
-      <div className="mt-16">
-        <PartnersSection />
-      </div>
-    ),
-  },
+  // {
+  //   path: "/bms/parteneri",
+  //   element: (
+  //     <div className="mt-16">
+  //       <PartnersSection />
+  //     </div>
+  //   ),
+  // },
 ];
 
 export default routes;

@@ -7,7 +7,7 @@ export default function MainLayout({ children }) {
     <div>
       <Navbar />
       {children}
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
       <Footer />
     </div>
   );

@@ -16,6 +16,8 @@ const articles = [
         title: "Control de la distanță",
         content:
           "Reglează temperatura chiar dacă nu ești acasă, direct din aplicația mobilă.",
+        image:
+          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=60",
       },
       {
         id: "programare-inteligenta",

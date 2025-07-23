@@ -10,7 +10,7 @@ export default function HighlightedBlogPost({
   isHot,
 }) {
   return (
-    <section className="bg-gray-100 text-gray-900 py-12 px-4">
+    <section className="bg-gray-100 text-gray-900 py-12 px-4 mb-20 mt-20">
       <div className="max-w-[1350px] mx-auto flex flex-col lg:flex-row items-center gap-8">
         {/* Imaginea - Stânga */}
         <div className="w-full lg:w-1/2">

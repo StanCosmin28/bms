@@ -4,7 +4,7 @@ import cards from "../Posts/hotFeedData";
 export default function HomeHotFeed() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
-    <section className="bg-gray-100 text-gray-900 py-12 px-4">
+    <section className="bg-gray-100 text-gray-900 py-12 px-4 mt-10">
       <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-left mb-8">
           Articole Recomandate
