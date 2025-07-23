@@ -42,10 +42,19 @@ export default function DomainsSection() {
     { label: "Ghiduri & Tutoriale", value: "Ghiduri & Tutoriale" },
     { label: "Proiecte & Aplicatii", value: "Proiecte & Aplicatii" },
   ];
+  // const tags = [
+  //   { label: "Toate", value: null },
+  //   { label: "Eficiența Energetică", value: "energy_efficiency" },
+  //   { label: "Inovații BMS", value: "bms_innovations" },
+  //   { label: "Sustenabilitate", value: "sustainability" },
+  //   { label: "Date & Statistici", value: "data_and_statistics" },
+  //   { label: "Ghiduri & Tutoriale", value: "guides_and_tutorials" },
+  //   { label: "Proiecte & Aplicații", value: "projects_and_applications" },
+  // ];
 
   const getSelectedTagLabel = () => {
     const selected = tags.find((tag) => tag.value === selectedTag);
-    return selected ? selected.label : "Toate domeniile";
+    return selected ? selected.label : "all";
   };
 
   return (

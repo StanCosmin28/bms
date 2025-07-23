@@ -160,6 +160,43 @@ const cards = [
       },
     ],
   },
+  {
+    id: "securitatea-caselor-inteligente",
+    coverImage: "",
+    title: "Securitatea este cheia caselor inteligente",
+    author: "N/A",
+    description:
+      "Problema securității în integrarea IoT în casele inteligente și ce motivează utilizatorii să adopte aceste tehnologii.",
+    tag: "Date_si_Statistici",
+    date: "23 July 2025",
+    isHot: true,
+    sections: [
+      {
+        id: "introducere-securitate-iot",
+        title: "Introducere în Securitatea IoT",
+        content:
+          "Un studiu realizat de Essence și Strategy Analytics în 2015 a evidențiat că securitatea reprezintă principala preocupare a dezvoltatorilor în integrarea IoT în casele inteligente.",
+      },
+      {
+        id: "motivatii-utilizatori",
+        title: "Ce Motivează Utilizatorii?",
+        content:
+          "Studiul a analizat preferințele clienților privind casele inteligente, evidențiind că utilizatorii sunt dispuși să plătească pentru monitorizarea securității de la distanță. Europenii sunt dispuși să plătească cu 50% mai mult decât americanii pentru sisteme de start-up, ambele regiuni preferând abonamente lunare pentru soluții IoT de management al locuinței.",
+      },
+      {
+        id: "diferente-regionale",
+        title: "Diferențe Regionale",
+        content:
+          "Americanii prioritizează securitatea, în timp ce europenii sunt mai interesați de reducerea consumului de energie și economisire.",
+      },
+      {
+        id: "solutia-werathome",
+        title: "Soluția WeR@HomeTM",
+        content:
+          "Produsul Essence WeR@HomeTM permite managementul complet al locuinței în timp real, de pe orice dispozitiv și locație, controlând securitatea, siguranța și alte sisteme ale casei. Este disponibil global prin provideri precum G4S și Telecom Italia, integrându-se ușor pe platformele acestora.",
+      },
+    ],
+  },
 ];
 
 export default cards;
