@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import articles from "../Posts/hotFeedData";
+// import articles from "../Posts/hotFeedData";
+import data from "../Posts/finalData";
 
 export default function HotFeedBlogPost() {
   const { id } = useParams();
   const [activeSection, setActiveSection] = useState("");
 
   // Find the blog post matching the id
-  const post = articles.find((post) => post.id === id);
+  const post = data.find((post) => post.id === id);
 
   // Handle case when post is not found
   if (!post) {

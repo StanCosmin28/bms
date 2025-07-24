@@ -1,7 +1,9 @@
 import articles from "../Posts/domainsData";
+import data from "../Posts/finalData";
 
 export default function HomeDomainsSection() {
-  const data = articles.slice(0, 8);
+  const POSTS = data.filter((post) => !post.isHot).slice(0, 8);
+  console.log(data);
 
   return (
     <section className="bg-gray-100 text-gray-900 py-12 px-4">
@@ -10,7 +12,7 @@ export default function HomeDomainsSection() {
           Ultimele Noutăți
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {data.map((product, index) => (
+          {POSTS.map((product, index) => (
             <div
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 cursor-pointer relative"

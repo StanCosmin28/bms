@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import articles from "../Posts/domainsData";
+// import articles from "../Posts/domainsData";
+import data from "../Posts/finalData";
 
 export default function DomainsSection() {
   const [selectedTag, setSelectedTag] = useState(null);
@@ -30,27 +31,18 @@ export default function DomainsSection() {
   }, []);
 
   const filteredArticles = selectedTag
-    ? articles.filter((article) => article.tag === selectedTag)
-    : articles;
+    ? data.filter((post) => post.tag === selectedTag)
+    : data;
 
   const tags = [
     { label: "Toate", value: null },
-    { label: "Eficienta Energetica", value: "Eficienta Energetica" },
-    { label: "Inovatii BMS", value: "Inovatii BMS" },
-    { label: "Sustenabilitate", value: "Sustenabilitate" },
-    { label: "Date & Statistici", value: "Date & Statistici" },
-    { label: "Ghiduri & Tutoriale", value: "Ghiduri & Tutoriale" },
-    { label: "Proiecte & Aplicatii", value: "Proiecte & Aplicatii" },
+    { label: "Eficiența Energetică", value: "energy_efficiency" },
+    { label: "Inovații BMS", value: "inovatii_bms" },
+    { label: "Sustenabilitate", value: "sustainability" },
+    { label: "Date & Statistici", value: "data_and_statistics" },
+    { label: "Ghiduri & Tutoriale", value: "guides_and_tutorials" },
+    { label: "Proiecte & Aplicații", value: "projects_and_applications" },
   ];
-  // const tags = [
-  //   { label: "Toate", value: null },
-  //   { label: "Eficiența Energetică", value: "energy_efficiency" },
-  //   { label: "Inovații BMS", value: "bms_innovations" },
-  //   { label: "Sustenabilitate", value: "sustainability" },
-  //   { label: "Date & Statistici", value: "data_and_statistics" },
-  //   { label: "Ghiduri & Tutoriale", value: "guides_and_tutorials" },
-  //   { label: "Proiecte & Aplicații", value: "projects_and_applications" },
-  // ];
 
   const getSelectedTagLabel = () => {
     const selected = tags.find((tag) => tag.value === selectedTag);
