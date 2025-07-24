@@ -132,8 +132,8 @@ export default function Banner() {
           {/* <div className="absolute bottom-10 right-10 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div> */}
 
           {/* Conținut suprapus */}
-          <div className="relative z-10 flex flex-col items-start justify-center h-full text-left px-6 sm:px-8 lg:px-12  max-w-[600px]">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight bg-[#5154FF] p-4 rounded-xl shadow-lg">
+          <div className="relative z-10 flex flex-col items-start justify-center h-full text-left px-6 sm:px-8 lg:px-12  max-w-[580px]">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-[2.8rem] font-bold text-white tracking-tight bg-[#5154FF] p-4 rounded-xl shadow-lg">
               Descoperă Tehnologia{" "}
               <span className="text-cyan-200">BMS cu BMS România</span>
             </h1>
@@ -167,12 +167,12 @@ export default function Banner() {
               transforma spațiul tău într-un mediu inteligent și sustenabil.
             </p>
 
-            <a
+            {/* <a
               href="#"
               className="bg-[#5154FF] text-white px-6 py-3 rounded-xl hover:bg-[#5154FF] transition-all duration-300 text-base sm:text-lg font-semibold shadow-xl transform hover:scale-105 active:scale-[0.98]"
             >
               Află Mai Mult
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
