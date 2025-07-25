@@ -18,6 +18,7 @@ const {
   sistemeConstructiiProductiveEficiente,
   casaInteligentaPersoaneVarsta,
 } = IMAGES;
+
 const data = [
   {
     id: "securitatea-caselor-inteligente",

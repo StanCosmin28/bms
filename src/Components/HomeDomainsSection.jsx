@@ -1,9 +1,9 @@
-import articles from "../Posts/domainsData";
+// import articles from "../Posts/domainsData";
 import data from "../Posts/finalData";
 
 export default function HomeDomainsSection() {
   const POSTS = data.filter((post) => !post.isHot).slice(0, 8);
-  console.log(data);
+  // console.log(data);
 
   return (
     <section className="bg-gray-100 text-gray-900 py-12 px-4">
@@ -12,38 +12,38 @@ export default function HomeDomainsSection() {
           Ultimele Noutăți
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {POSTS.map((product, index) => (
+          {POSTS.map((post, index) => (
             <div
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 cursor-pointer relative"
             >
               <a
                 href={`http://localhost:5173/bms/${
-                  product.isHot ? "hot-feed" : "domenii"
-                }/${product.id}`}
+                  post.isHot ? "hot-feed" : "domenii"
+                }/${post.id}`}
                 className="block w-full"
               >
                 <img
-                  src={product.coverImage}
-                  alt={product.title}
+                  src={post.coverImage}
+                  alt={post.title}
                   className="w-full h-48 object-cover"
                 />
 
                 <div className="p-4 flex flex-col justify-between min-h-[180px]">
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                      {product.title}
+                      {post.title}
                     </h3>
                     <p className="text-gray-600 text-sm mb-4 flex-grow">
-                      {product.description}
+                      {post.description}
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2 flex-row items-center justify-between">
                     <span className="lg:text-[10px] xl:text-xs text-black/50 font-semibold">
-                      {product.date}
+                      {post.date}
                     </span>
                     <span className="lg:text-[10px] xl:text-xs font-medium text-blue-600 bg-blue-100 rounded-full px-2 py-1">
-                      {product.tag}
+                      {post.tag}
                     </span>
                   </div>
                 </div>
