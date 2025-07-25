@@ -8,7 +8,7 @@ const IMAGES = {
   buildingManagementSystem: `${URL}/building-management-system.png`,
   visibleEnergyUfo: `${URL}/visible-energy-ufo.png`,
   controlIncalzireBms: `${URL}/control-incalzire-bms.png`,
-  pregatireCasaInteligenta: `${URL}/pregatire-casa-inteligenta.png`,
+  pregatireCasaInteligenta: `${URL}/pregatire-casa-inteligenta.jpeg`,
   accesibilitateCaseInteligente: `${URL}/accesibilitate-case-inteligente.png`,
   appleHomekitPlatform: `${URL}/apple-homekit-platform.png`,
   casaViitoruluiDezbatere: `${URL}/casa-viitorului-dezbatere.png`,
