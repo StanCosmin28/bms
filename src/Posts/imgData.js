@@ -1,4 +1,4 @@
-const URL = "https://stancosmin28.github.io/bms/post_img";
+const URL = "https://stancosmin28.github.io/bms";
 
 const IMAGES = [
   {

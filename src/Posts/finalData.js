@@ -11,6 +11,7 @@ const {
   pregatireCasaInteligenta,
   accesibilitateCaseInteligente,
   appleHomekitPlatform,
+  casaViitoruluiDezbatere,
   amazonEnergieRegenerabila,
   inteligentaCladireEdge,
   sistemControlAccesBirouri,
