@@ -1,8 +1,26 @@
+import IMAGES from "./imgData";
+
+const {
+  securitateaCaselorInteligente,
+  eficientaEnergeticaBms,
+  contorizareInteligenta,
+  controlIluminatLutron,
+  buildingManagementSystem,
+  visibleEnergyUfo,
+  controlIncalzireBms,
+  pregatireCasaInteligenta,
+  accesibilitateCaseInteligente,
+  appleHomekitPlatform,
+  amazonEnergieRegenerabila,
+  inteligentaCladireEdge,
+  sistemControlAccesBirouri,
+  sistemeConstructiiProductiveEficiente,
+  casaInteligentaPersoaneVarsta,
+} = IMAGES;
 const data = [
   {
     id: "securitatea-caselor-inteligente",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: securitateaCaselorInteligente,
     title: "Securitatea este cheia caselor inteligente",
     author: "N/A",
     description:
@@ -46,8 +64,7 @@ const data = [
   },
   {
     id: "eficienta-energetica-bms",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: eficientaEnergeticaBms,
     title: "Comoditate si confort cu Building Management System",
     author: "N/A",
     description:
@@ -97,8 +114,7 @@ const data = [
   },
   {
     id: "contorizare-inteligenta",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: contorizareInteligenta,
     title:
       "Contorizarea inteligentă - cheia eficienței energetice în clădirile moderne",
     author: "N/A",
@@ -149,8 +165,7 @@ const data = [
   },
   {
     id: "control-iluminat-lutron",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: controlIluminatLutron,
     title: "Control inteligent al iluminatului pentru eficiență energetică",
     author: "N/A",
     description:
@@ -194,8 +209,7 @@ const data = [
   },
   {
     id: "building-management-system",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: buildingManagementSystem,
     title: "De ce Building Management System?",
     author: "N/A",
     description:
@@ -240,8 +254,7 @@ const data = [
   },
   {
     id: "visible-energy-ufo",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: visibleEnergyUfo,
     title: "Energia Vizibila. Centru de alimentare UFO Smart Power Trip",
     author: "N/A",
     description:
@@ -298,8 +311,7 @@ const data = [
   },
   {
     id: "control-incalzire-bms",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: controlIncalzireBms,
     title:
       "Controlul automatizat al încălzirii — confort sporit pentru orice tip de imobil",
     author: "N/A",
@@ -356,8 +368,7 @@ const data = [
   },
   {
     id: "pregatire-casa-inteligenta",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: pregatireCasaInteligenta,
     title: "Cum pregătești o casă inteligentă încă din faza de construcție",
     author: "N/A",
     description:
@@ -407,8 +418,7 @@ const data = [
   },
   {
     id: "accesibilitate-case-inteligente",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: accesibilitateCaseInteligente,
     title: "Accesibilitatea Caselor Inteligente",
     author: "N/A",
     description:
@@ -464,8 +474,7 @@ const data = [
   },
   {
     id: "apple-homekit-platform",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: appleHomekitPlatform,
     title: "Apple Homekit - platforma Apple pentru case inteligente",
     author: "N/A",
     description:
@@ -497,8 +506,7 @@ const data = [
   },
   {
     id: "casa-viitorului-dezbatere",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: casaViitoruluiDezbatere,
     title: "Casa viitorului: mai multă grijă din partea casei noastre",
     author: "N/A",
     description:
@@ -560,8 +568,7 @@ const data = [
   },
   {
     id: "amazon-energie-regenerabila",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: amazonEnergieRegenerabila,
     title: "Cum poate Amazon stimula utilizarea energiei regenerabile",
     author: "N/A",
     description:
@@ -606,8 +613,7 @@ const data = [
   },
   {
     id: "inteligenta-cladire-edge",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: inteligentaCladireEdge,
     title: "Inteligența unei clădiri - Clădirea Edge",
     author: "N/A",
     description: "Cea mai ecologică clădire de birouri din lume",
@@ -650,8 +656,7 @@ const data = [
   },
   {
     id: "sistem-control-acces-birouri",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: sistemControlAccesBirouri,
     title: "Sistem de control acces birouri",
     author: "N/A",
     description:
@@ -685,8 +690,7 @@ const data = [
   },
   {
     id: "sisteme-constructii-productive-eficiente",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: sistemeConstructiiProductiveEficiente,
     title: "Sisteme de construcții mai productive și mai eficiente",
     author: "N/A",
     description:
@@ -719,8 +723,7 @@ const data = [
   },
   {
     id: "casa-inteligenta-persoane-varsta",
-    coverImage:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=3520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    coverImage: casaInteligentaPersoaneVarsta,
     title:
       "Casa inteligentă: Tehnologii care susțin independența și siguranța persoanelor în vârstă",
     author: "N/A",
