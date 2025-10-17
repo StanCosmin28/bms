@@ -28,9 +28,7 @@ export default function HomeHotFeed() {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <a
-                  href={`http://localhost:5173/bms/${
-                    card.isHot ? "hot-feed" : "domenii"
-                  }/${card.id}`}
+                  href={`/${card.isHot ? "hot-feed" : "domenii"}/${card.id}`}
                   className="block w-full"
                 >
                   <img

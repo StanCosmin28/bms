@@ -8,7 +8,11 @@ export default function DomainsBlogPost() {
   const [activeSection, setActiveSection] = useState("");
 
   // Find the blog post matching the id
-  const post = data.find((post) => post.id === id);
+  const post = data.find((post) => {
+    let image = post.coverImage.split("public")[1];
+
+    return post.id === id;
+  });
 
   // Handle case when post is not found
   if (!post) {
@@ -102,7 +106,7 @@ export default function DomainsBlogPost() {
       {/* Cover Image */}
       <div className="w-full h-64 sm:h-80 lg:h-145 overflow-hidden">
         <img
-          src={post.coverImage || "/placeholder.svg"}
+          src={post.coverImage || "/securitatea-caselor-inteligente.png"}
           alt="Article cover"
           className="w-full h-full object-cover"
         />

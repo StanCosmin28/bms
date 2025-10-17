@@ -10,14 +10,14 @@ import HotFeed from "../Components/HotFeed";
 import articles from "../Posts/domainsData";
 import DomainsSection from "../Components/DomainsSection";
 import HomeDomainsSection from "../Components/HomeDomainsSection";
-import PartnersSection from "../Components/PartnersSection";
+// import PartnersSection from "../Components/PartnersSection";
 // import SolarSystemComponent from "../Components/SolarSystemComponent";
 // import ScrollAnimationComponent from "../Components/Test";
 
 const data = articles.slice(0, 2);
 const routes = [
   {
-    path: "/bms",
+    path: "/",
     element: (
       <div>
         <HeaderCarousel />
@@ -33,7 +33,7 @@ const routes = [
     ),
   },
   {
-    path: "/bms/domenii",
+    path: "/domenii",
     element: (
       <div className="mt-16">
         <DomainsSection />
@@ -41,7 +41,7 @@ const routes = [
     ),
   },
   {
-    path: "/bms/domenii/:id",
+    path: "/domenii/:id",
     element: (
       <div className="mt-16">
         <DomainsBlogPost />
@@ -50,7 +50,7 @@ const routes = [
     ),
   },
   {
-    path: "/bms/hot-feed",
+    path: "/hot-feed",
     element: (
       <div className="mt-16">
         <HotFeed />
@@ -58,7 +58,7 @@ const routes = [
     ),
   },
   {
-    path: "/bms/hot-feed/:id",
+    path: "/hot-feed/:id",
     element: (
       <div className="mt-16">
         <HotFeedBlogPost />

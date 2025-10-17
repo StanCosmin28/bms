@@ -1,28 +1,7 @@
-import IMAGES from "./imgData";
-
-const {
-  securitateaCaselorInteligente,
-  eficientaEnergeticaBms,
-  contorizareInteligenta,
-  controlIluminatLutron,
-  buildingManagementSystem,
-  visibleEnergyUfo,
-  controlIncalzireBms,
-  pregatireCasaInteligenta,
-  accesibilitateCaseInteligente,
-  appleHomekitPlatform,
-  casaViitoruluiDezbatere,
-  amazonEnergieRegenerabila,
-  inteligentaCladireEdge,
-  sistemControlAccesBirouri,
-  sistemeConstructiiProductiveEficiente,
-  casaInteligentaPersoaneVarsta,
-} = IMAGES;
-
 const data = [
   {
     id: "securitatea-caselor-inteligente",
-    coverImage: securitateaCaselorInteligente,
+    coverImage: "/securitatea-caselor-inteligente.png",
     title: "Securitatea este cheia caselor inteligente",
     author: "N/A",
     description:
@@ -66,7 +45,7 @@ const data = [
   },
   {
     id: "eficienta-energetica-bms",
-    coverImage: eficientaEnergeticaBms,
+    coverImage: "/eficienta-energetica-bms.png",
     title: "Comoditate si confort cu Building Management System",
     author: "N/A",
     description:
@@ -116,7 +95,7 @@ const data = [
   },
   {
     id: "contorizare-inteligenta",
-    coverImage: contorizareInteligenta,
+    coverImage: "/contorizare-inteligenta.png",
     title:
       "Contorizarea inteligentă - cheia eficienței energetice în clădirile moderne",
     author: "N/A",
@@ -167,7 +146,7 @@ const data = [
   },
   {
     id: "control-iluminat-lutron",
-    coverImage: controlIluminatLutron,
+    coverImage: "/control-iluminat-lutron.png",
     title: "Control inteligent al iluminatului pentru eficiență energetică",
     author: "N/A",
     description:
@@ -211,7 +190,7 @@ const data = [
   },
   {
     id: "building-management-system",
-    coverImage: buildingManagementSystem,
+    coverImage: "/building-management-system.png",
     title: "De ce Building Management System?",
     author: "N/A",
     description:
@@ -256,7 +235,7 @@ const data = [
   },
   {
     id: "visible-energy-ufo",
-    coverImage: visibleEnergyUfo,
+    coverImage: "/visible-energy-ufo.png",
     title: "Energia Vizibila. Centru de alimentare UFO Smart Power Trip",
     author: "N/A",
     description:
@@ -313,7 +292,7 @@ const data = [
   },
   {
     id: "control-incalzire-bms",
-    coverImage: controlIncalzireBms,
+    coverImage: "/control-incalzire-bms.png",
     title:
       "Controlul automatizat al încălzirii — confort sporit pentru orice tip de imobil",
     author: "N/A",
@@ -370,7 +349,7 @@ const data = [
   },
   {
     id: "pregatire-casa-inteligenta",
-    coverImage: pregatireCasaInteligenta,
+    coverImage: "/pregatire-casa-inteligenta.jpeg",
     title: "Cum pregătești o casă inteligentă încă din faza de construcție",
     author: "N/A",
     description:
@@ -420,7 +399,7 @@ const data = [
   },
   {
     id: "accesibilitate-case-inteligente",
-    coverImage: accesibilitateCaseInteligente,
+    coverImage: "/accesibilitate-case-inteligente.png",
     title: "Accesibilitatea Caselor Inteligente",
     author: "N/A",
     description:
@@ -476,7 +455,7 @@ const data = [
   },
   {
     id: "apple-homekit-platform",
-    coverImage: appleHomekitPlatform,
+    coverImage: "/apple-homekit-platform.png",
     title: "Apple Homekit - platforma Apple pentru case inteligente",
     author: "N/A",
     description:
@@ -508,7 +487,7 @@ const data = [
   },
   {
     id: "casa-viitorului-dezbatere",
-    coverImage: casaViitoruluiDezbatere,
+    coverImage: "/casa-viitorului-dezbatere.png",
     title: "Casa viitorului: mai multă grijă din partea casei noastre",
     author: "N/A",
     description:
@@ -570,7 +549,7 @@ const data = [
   },
   {
     id: "amazon-energie-regenerabila",
-    coverImage: amazonEnergieRegenerabila,
+    coverImage: "/amazon-energie-regenerabila.png",
     title: "Cum poate Amazon stimula utilizarea energiei regenerabile",
     author: "N/A",
     description:
@@ -615,7 +594,7 @@ const data = [
   },
   {
     id: "inteligenta-cladire-edge",
-    coverImage: inteligentaCladireEdge,
+    coverImage: "/inteligenta-cladire-edge.png",
     title: "Inteligența unei clădiri - Clădirea Edge",
     author: "N/A",
     description: "Cea mai ecologică clădire de birouri din lume",
@@ -658,7 +637,7 @@ const data = [
   },
   {
     id: "sistem-control-acces-birouri",
-    coverImage: sistemControlAccesBirouri,
+    coverImage: "/sistem-control-acces-birouri.png",
     title: "Sistem de control acces birouri",
     author: "N/A",
     description:
@@ -692,7 +671,7 @@ const data = [
   },
   {
     id: "sisteme-constructii-productive-eficiente",
-    coverImage: sistemeConstructiiProductiveEficiente,
+    coverImage: "/sisteme-constructii-productive-eficiente.png",
     title: "Sisteme de construcții mai productive și mai eficiente",
     author: "N/A",
     description:
@@ -725,7 +704,7 @@ const data = [
   },
   {
     id: "casa-inteligenta-persoane-varsta",
-    coverImage: casaInteligentaPersoaneVarsta,
+    coverImage: "/casa-inteligenta-persoane-varsta.png",
     title:
       "Casa inteligentă: Tehnologii care susțin independența și siguranța persoanelor în vârstă",
     author: "N/A",

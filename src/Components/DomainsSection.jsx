@@ -166,9 +166,9 @@ export default function DomainsSection() {
               className="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 cursor-pointer relative"
             >
               <a
-                href={`http://localhost:5173/bms/${
-                  product.isHot ? "hot-feed" : "domenii"
-                }/${product.id}`}
+                href={`/${product.isHot ? "hot-feed" : "domenii"}/${
+                  product.id
+                }`}
                 className="block w-full"
               >
                 <img

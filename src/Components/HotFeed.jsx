@@ -19,9 +19,7 @@ export default function HotFeed() {
               className="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 cursor-pointer"
             >
               <a
-                href={`http://localhost:5173/bms/${
-                  card.isHot ? "hot-feed" : "domenii"
-                }/${card.id}`}
+                href={`/${card.isHot ? "hot-feed" : "domenii"}/${card.id}`}
                 className="block w-full"
               >
                 <img

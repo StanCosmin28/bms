@@ -44,9 +44,7 @@ export default function HighlightedBlogPost({
           </div>
           {buttonText && (
             <a
-              href={`http://localhost:5173/bms/${
-                isHot ? "hot-feed" : "domenii"
-              }/${id}`}
+              href={`/${isHot ? "hot-feed" : "domenii"}/${id}`}
               className="inline-block bg-blue-100 text-blue-700 px-6 py-3 rounded-lg hover:bg-blue-200 transition-colors text-center"
             >
               {buttonText}

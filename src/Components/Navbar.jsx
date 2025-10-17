@@ -63,7 +63,7 @@ export default function Navbar() {
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
-          to="/bms/"
+          to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span className="self-center text-2xl font-black whitespace-nowrap text-black ">
@@ -220,7 +220,7 @@ export default function Navbar() {
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-bold border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
             <li>
               <Link
-                to="/bms/hot-feed"
+                to="/hot-feed"
                 className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
               >
@@ -237,7 +237,7 @@ export default function Navbar() {
             </li> */}
             <li>
               <Link
-                to="/bms/domenii"
+                to="/domenii"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >
                 DOMENII
